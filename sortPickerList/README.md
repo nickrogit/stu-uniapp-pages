@@ -1,14 +1,13 @@
 
-### wxaSortPicker
+### sortPickerList
 
-* 版本号`1.0.1`
-* github地址: [https://github.com/nickrogit/wxaSortPicker](https://github.com/nickrogit/wxaSortPicker)
-* 说明：小程序首字母排序选择器，网上有不少但觉得不太好，自己优化改进的这款觉得还不错，后面再慢慢完善丰富。
+* 版本号`1.0.0`
+* 小程序版github地址: [https://github.com/nickrogit/wxaSortPicker](https://github.com/nickrogit/wxaSortPicker)
+
 
 ### 版本说明
 
-* 1.0.0版本仅支持字符串数组
-* 1.0.1版本加入json数组支持，如：[{name:'中国',value:'China'},{name:'美国',value:'America'}]，value取值e.target.dataset.value，其他不变
+* 1.0.0版本json数组支持，如：[{name:'中国',value:'China'},{name:'美国',value:'America'}]，value取值e.target.dataset.value，其他不变
 
 
 ### 功能
