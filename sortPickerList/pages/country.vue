@@ -4,7 +4,7 @@
 	</view>
 </template>
 <script>
-	import SortPickerList from "@/components/sortPickerList.vue"
+	import SortPickerList from "@/components/nickro-sortPickerList.vue"
 	export default {
 		name:"contury",
 		components: {SortPickerList},
