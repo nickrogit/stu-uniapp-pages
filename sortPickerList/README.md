@@ -1,12 +1,12 @@
 
 ### sortPickerList
 
-* 版本号`1.0.0`
+* 版本号`1.0.1`
 * 原生小程序版github地址: [https://github.com/nickrogit/wxaSortPicker](https://github.com/nickrogit/wxaSortPicker)
 
 
 ### 版本说明
-
+* 1.0.1版本,优化uni-app非H5端不支持的语法
 * 1.0.0版本json数组支持，如：[{name:'中国',value:'China'},{name:'美国',value:'America'}]，value取值e.target.dataset.value，其他不变
 * 解析汉字编码排序，常用json格式数据，结构简单方便，再也不用自己整理字母分类啦。（目前市场插件都需要按字母分类自己写固定格式）
 

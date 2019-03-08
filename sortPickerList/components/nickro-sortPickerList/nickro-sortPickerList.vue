@@ -4,27 +4,17 @@
         <block v-for="(item,index) in wxaSortPickerData.textData" :key="index">
             <view :id="item.tag" class="wxaSortPickerTag">{{item.tag}}</view>
             <view class='wxaSortPickerItem-box'>
-							<!-- <template is="wxaSortPickerItem" data="{{item,dataType}}"/> -->
-							<block v-if='dataType == "object"'>
-								<block v-for="(child,index) in item.textArray" :key="index">
-										<view class="wxaSortPickerItem" :data-text="child.name" :data-value="child.value"  @tap= "wxaSortPickerItemTap">
-											{{child.name}}
-										</view>
-								</block>
-							</block>
-							<block v-else>
-								<block v-for="(child,index) in item.textArray" :key="index">
-										<view class="wxaSortPickerItem" :data-text="child"  @tap= "wxaSortPickerItemTap">
-											{{child}}
-										</view>
-								</block>
+							<block v-for="(child,inde) in item.textArray" :key="inde">
+									<view class="wxaSortPickerItem" :data-text="child.name" :data-value="child.value"  @tap= "wxaSortPickerItemTap">
+										{{child.name}}
+									</view>
 							</block>
             </view>
         </block>
     </scroll-view>
-    <!-- <template is="wxaSortPickerTemTags"/> -->
+    
 		<scroll-view style="width:20px;" class="wxaSortPickerTemTags">
-        <block v-for="(item,index) in charsABC" :key="index">
+        <block v-for="(item,idx) in charsABC" :key="idx">
             <view :data-tag="item" class="wxaSortPickerTemTag" @tap="wxaSortPickerTemTagTap">{{item}}</view>
         </block>
     </scroll-view>
@@ -168,7 +158,7 @@
 			query: function(text) {
 				var that = this
 					var str = that.trim(text);
-					if (str == "") return;
+					if (!str) return;
 					var arrRslt = that.makePy(str);
 					return arrRslt;
 			},
